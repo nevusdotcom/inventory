@@ -1,0 +1,20 @@
+<div flayout="column">
+    <md-content flex>
+        <div layout="column">
+            <md-card ng-repeat="item in itemsCollection" ng-click="alert('yo')">
+                <div>
+                    <div card-img="{{item.img_url}}"></div>
+                </div>
+                <md-card-title>
+                    <md-card-title-text>
+                        <ul>
+                            <li>Item: {{item.id}}</li>
+                        </ul>
+                        <ul>
+                            <li>Name: {{item.name}}</li>
+                        </ul>
+                    </md-card-title-text>
+                </md-card-title>
+        </div>
+    </md-content>
+</div>
